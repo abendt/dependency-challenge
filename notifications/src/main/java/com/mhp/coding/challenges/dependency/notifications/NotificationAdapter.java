@@ -10,10 +10,10 @@ import com.mhp.coding.challenges.dependency.inquiry.NotificationPort;
 public class NotificationAdapter implements NotificationPort {
 
     @Autowired
-    EmailHandler emailHandler;
+    private EmailHandler emailHandler;
 
     @Autowired
-    PushNotificationHandler pushNotificationHandler;
+    private PushNotificationHandler pushNotificationHandler;
 
     @Override
     public void inquiryCreated(final Inquiry inquiry) {
